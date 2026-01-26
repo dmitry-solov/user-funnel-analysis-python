@@ -1,47 +1,75 @@
-# User Behavior and Funnel Analysis (Python)
+User Funnel & Product Analysis (Python)
 
-## Overview
-This project focuses on exploratory data analysis and funnel analysis using event-based user data.
-The goal is to analyze user behavior across different funnel steps and understand how users progress through sessions.
+AARRR Summary
 
-The project is designed as a practical exercise in data analysis, with an emphasis on data preparation, metric calculation and exploratory insights.
+Caso di product analytics basato su dati event-level.
+	•	Acquisition: Alto volume di visualizzazioni, ma assenza di attribution delle sorgenti di traffico.
+	•	Activation: Principale bottleneck tra View → Cart (11.15%), mentre Cart → Purchase ≈ 60%.
+	•	Retention: Retention per coorti non disponibile; picco di attività tra 14:00–17:00, soprattutto Tue/Wed.
+	•	Revenue: Samsung e Apple guidano il fatturato. LG mostra bassa activation ma alta intenzione di acquisto.
+	•	Referral: Non tracciato.
 
-## Dataset
-Source: Kaggle (event-level dataset)
+Azioni di Prodotto Prioritarie
+	•	Priorità all’activation (product discovery è il collo di bottiglia principale).
+	•	Miglioramento UX delle product pages e chiarezza delle CTA.
+	•	Riduzione del time-to-value.
+	•	Maggiore visibilità ai brand ad alta intenzione (es. LG).
+	•	Allineamento delle campagne ai peak hours.
+	•	Investigazione delle anomalie di tracking.
+	•	Target CLV:CAC ≥ 3:1.
 
-The dataset contains user interaction events collected over time.
-Each record represents a specific user action associated with a session and timestamp.
+⸻
 
-## Analysis Workflow
+Overview
 
-### 1. Load and Inspect the Data
-- Loaded the dataset using pandas
-- Inspected data structure, data types and missing values
+Analisi end-to-end del funnel utenti utilizzando dati event-level per individuare bottleneck comportamentali e tradurre gli insight in raccomandazioni di prodotto.
 
-### 2. Clean and Preprocess
-- Cleaned and transformed raw data
-- Handled missing and inconsistent values
-- Prepared session-level structures for analysis
+⸻
 
-### 3. Funnel Conversion Rates
-- Defined funnel steps based on user events
-- Calculated conversion rates between funnel stages
-- Identified drop-off points within the funnel
+Dataset
 
-### 4. Event Distribution Over Time
-- Analyzed event frequency over time
-- Explored temporal patterns in user activity
+Dataset ecommerce event-level da Kaggle.
 
-### 5. Session Funnel Breakdown
-- Analyzed funnel progression at session level
-- Evaluated how users move through the funnel within individual sessions
+⸻
 
-## Tools and Technologies
-- Python
-- pandas
-- matplotlib
-- seaborn
+Analysis Highlights
+	•	Costruzione funnel View → Cart → Purchase
+	•	Identificazione del bottleneck di activation
+	•	Analisi comportamentale per ora e giorno della settimana
+	•	Funnel per brand
+	•	Mappatura degli insight sul framework AARRR
 
-## Notes
-This project focuses on analytical workflow and metric calculation rather than business decision-making.
-It serves as a demonstration of data cleaning, exploratory data analysis and funnel analysis skills.
+⸻
+
+Metrics Framework
+
+Activation
+	•	View → Cart conversion
+	•	Time to first cart
+	•	% utenti che aggiungono al carrello nella prima sessione
+
+Retention (future)
+	•	D1 / D7 retention
+	•	Cohort retention
+	•	Churn
+
+Revenue
+	•	Cart → Purchase
+	•	AOV
+	•	CLV:CAC
+
+Acquisition / Referral (future)
+	•	Source attribution
+	•	Referral rate
+
+⸻
+
+Tools
+
+Python, pandas, matplotlib, seaborn
+
+⸻
+
+Notes
+
+Progetto focalizzato sulla traduzione degli insight quantitativi in decisioni di prodotto concrete.
