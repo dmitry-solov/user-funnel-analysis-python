@@ -1,54 +1,30 @@
-## AARRR Summary
+# User Funnel & Product Analysis (Python)
 
-Caso di product analytics basato su dati event-level.
+Product analytics project based on event-level ecommerce data.
 
-### Acquisition
-- Alto volume di visualizzazioni, ma assenza di attribution delle sorgenti di traffico.
-
-### Activation
-- Principale bottleneck tra View → Cart (11.15%).
-- Cart → Purchase ≈ 60%.
-
-### Retention
-- Retention per coorti non disponibile.
-- Picco di attività tra 14:00–17:00, soprattutto Tue/Wed.
-
-### Revenue
-- Samsung e Apple guidano il fatturato.
-- LG mostra bassa activation ma alta intenzione di acquisto.
-
-### Referral
-- Non tracciato.
-
-### Azioni di Prodotto Prioritarie
-- Priorità all’activation (product discovery è il collo di bottiglia principale).
-- Miglioramento UX delle product pages e chiarezza delle CTA.
-- Riduzione del time-to-value.
-- Maggiore visibilità ai brand ad alta intenzione (es. LG).
-- Allineamento delle campagne ai peak hours.
-- Investigazione delle anomalie di tracking.
-- Target CLV:CAC ≥ 3:1.
------------------------------------------------------------------------------------------------------------------------------------------
 ## Overview
 
-Analisi end-to-end del funnel utenti utilizzando dati event-level per individuare bottleneck comportamentali e tradurre gli insight in raccomandazioni di prodotto.
------------------------------------------------------------------------------------------------------------------------------------------
-## Dataset
+Analisi funnel View → Cart → Purchase con applicazione del framework AARRR per identificare bottleneck comportamentali e tradurre insight quantitativi in raccomandazioni di prodotto.
 
-Dataset ecommerce event-level da Kaggle.
------------------------------------------------------------------------------------------------------------------------------------------
-## Analysis Highlights
+## Key Highlights
 
 - Costruzione funnel View → Cart → Purchase  
-- Identificazione del bottleneck di activation  
+- Identificazione bottleneck di activation (11.15% View → Cart)  
 - Analisi comportamentale per ora e giorno della settimana  
 - Funnel per brand  
-- Mappatura degli insight sul framework AARRR  
------------------------------------------------------------------------------------------------------------------------------------------
+- Applicazione framework AARRR  
+
+## Main Product Insight
+
+Il principale collo di bottiglia è l’activation: solo l’11.15% degli utenti passa da View a Cart, mentre Cart → Purchase ≈ 60%.
+
+Questo indica che il checkout funziona, ma il problema è nella fase di product discovery.
+
+## Repository Structure
+
+- `funnel_analysis.ipynb` – analisi tecnica completa  
+- `PRODUCT_CASE.md` – product insights, metriche e raccomandazioni  
+
 ## Tools
 
 Python, pandas, matplotlib, seaborn
------------------------------------------------------------------------------------------------------------------------------------------
-## Notes
-
-Progetto focalizzato sulla traduzione degli insight quantitativi in decisioni di prodotto concrete.
