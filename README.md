@@ -4,26 +4,26 @@ Product analytics project based on event-level ecommerce data.
 
 ## Overview
 
-Analisi funnel View → Cart → Purchase con applicazione del framework AARRR per identificare bottleneck comportamentali e tradurre insight quantitativi in raccomandazioni di prodotto.
+Funnel analysis (View → Cart → Purchase) using the AARRR framework to identify behavioral bottlenecks and translate quantitative insights into product recommendations.
 
 ## Key Highlights
 
-- Costruzione funnel View → Cart → Purchase  
-- Identificazione bottleneck di activation (11.15% View → Cart)  
-- Analisi comportamentale per ora e giorno della settimana  
-- Funnel per brand  
-- Applicazione framework AARRR  
+- Built a View → Cart → Purchase funnel  
+- Identified activation bottleneck (11.15% View → Cart)  
+- Analyzed user behavior by hour and day of the week  
+- Built funnel breakdown by brand  
+- Applied AARRR framework  
 
 ## Main Product Insight
 
-Il principale collo di bottiglia è l’activation: solo l’11.15% degli utenti passa da View a Cart, mentre Cart → Purchase ≈ 60%.
+The main bottleneck is activation: only 11.15% of users move from View to Cart, while Cart → Purchase ≈ 60%.
 
-Questo indica che il checkout funziona, ma il problema è nella fase di product discovery.
+This indicates that the checkout process works well, but the issue lies in the product discovery stage.
 
 ## Repository Structure
 
-- `funnel_analysis.ipynb` – analisi tecnica completa  
-- `PRODUCT_CASE.md` – product insights, metriche e raccomandazioni  
+- `funnel_analysis.ipynb` – full technical analysis  
+- `PRODUCT_CASE.md` – product insights, metrics, and recommendations  
 
 ## Tools
 
