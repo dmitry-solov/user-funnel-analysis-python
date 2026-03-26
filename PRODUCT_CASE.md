@@ -1,72 +1,72 @@
 ## Product Recommendations (Data-driven)
 
-### Activation – principale leva di crescita
+### Activation – primary growth lever
 
-**Finding**
-Solo l’11.15% degli utenti passa da View a Cart, mentre Cart → Purchase ≈ 60%, indicando che il checkout funziona ma gli utenti faticano a raggiungere l’intenzione di acquisto.
+**Finding**  
+Only 11.15% of users move from View to Cart, while Cart → Purchase ≈ 60%, indicating that the checkout process works, but users struggle to reach purchase intent.
 
-**Hypothesis**
-Drop-off causato da value proposition poco chiara, UX debole delle product pages, mancanza di trust signals o attriti nella prima interazione.
+**Hypothesis**  
+Drop-off is caused by an unclear value proposition, weak product page UX, lack of trust signals, or friction during the initial interaction.
 
 **Actions**
-- Migliorare UX delle product pages (prezzo, spedizione, recensioni visibili above-the-fold).
-- Test A/B sulle CTA (“Aggiungi al carrello”, “Compra ora”).
-- Ridurre il numero di step prima del primo add-to-cart.
-- Implementare quick add-to-cart e raccomandazioni personalizzate.
+- Improve product page UX (price, shipping, reviews visible above-the-fold).
+- Run A/B tests on CTAs (“Add to Cart”, “Buy Now”).
+- Reduce the number of steps before the first add-to-cart.
+- Implement quick add-to-cart and personalized recommendations.
 
 ---
 
-### Retention – attualmente non misurabile
+### Retention – currently not measurable
 
-**Finding**
-Retention per coorti non disponibile. Sono osservabili solo pattern temporali con picco tra 14:00–17:00 (Tue/Wed).
+**Finding**  
+Cohort retention is not available. Only temporal patterns are observable, with peaks between 14:00–17:00 (Tue/Wed).
 
 **Actions**
-- Implementare cohort retention (D1/D7).
-- Introdurre metriche di churn e LTV.
-- Allineare comunicazioni e campagne ai peak hours.
+- Implement cohort retention (D1/D7).
+- Introduce churn and LTV metrics.
+- Align communications and campaigns with peak hours.
 
 ---
 
-### Revenue – ottimizzazione tramite activation
+### Revenue – optimization through activation
 
-**Finding**
-Samsung e Apple generano la maggior parte del fatturato.  
-LG mostra bassa activation ma alta conversione Cart → Purchase (~85%), indicando forte intenzione di acquisto.
+**Finding**  
+Samsung and Apple generate the majority of revenue.  
+LG shows low activation but high Cart → Purchase conversion (~85%), indicating strong purchase intent.
 
 **Actions**
-- Aumentare la visibilità dei brand ad alta intenzione (es. LG).
-- Bundle e promozioni mirate sui prodotti LG.
-- Miglior posizionamento nelle categorie.
+- Increase visibility of high-intent brands (e.g., LG).
+- Create bundles and targeted promotions for LG products.
+- Improve product positioning within categories.
 
 ---
 
 ### Tracking & Data Quality
 
-**Finding**
-Alcuni brand mostrano conversioni >100%, suggerendo problemi di strumentazione eventi.
+**Finding**  
+Some brands show conversion rates above 100%, indicating issues with event tracking.
 
 **Actions**
-- Audit del tracking di Cart e Purchase.
-- Validazione delle definizioni di evento.
-- Implementazione di controlli di qualità sui funnel.
+- Audit Cart and Purchase tracking.
+- Validate event definitions.
+- Implement data quality checks for funnel metrics.
 
 ---
 
 ### Acquisition & Referral – future instrumentation
 
-**Finding**
-Assenza di source attribution e referral tracking.
+**Finding**  
+No source attribution or referral tracking is currently implemented.
 
 **Actions**
-- Aggiungere source/medium/campaign.
-- Implementare referral identifiers.
-- Calcolare CAC e referral conversion rate.
+- Add source/medium/campaign parameters.
+- Implement referral identifiers.
+- Calculate CAC and referral conversion rate.
 
 ---
 
 ### Growth Strategy
 
-- Focus prioritario sull’activation come leva principale di revenue.
-- Incrementare CLV riducendo CAC.
+- Prioritize activation as the main revenue lever.
+- Increase CLV while reducing CAC.
 - Target CLV:CAC ≥ 3:1.
